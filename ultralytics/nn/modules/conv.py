@@ -344,7 +344,7 @@ class PDFA(nn.Module):
     """
 
     def __init__(self, channel, reduction=16, dropout=0.1):
-        super(FSAM1, self).__init__()
+        super(PDFA, self).__init__()
         self.channel = channel
         self.fft_dim = channel // 2 + 1
 
@@ -394,7 +394,7 @@ class PDFA(nn.Module):
 
         # 逆变换回时域
         y_ifft = torch.fft.irfft(y_fft_filtered, n=C, dim=1)  # [B, C]
-        ##
+        freq_att = torch.sigmoid(y_ifft).unsqueeze(-1).unsqueeze(-1)  # [B, C, 1, 1]
         frequency_out = x * freq_att
 
         # ========== 自适应融合 ==========
