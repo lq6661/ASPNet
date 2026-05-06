@@ -1,4 +1,3 @@
-```markdown
 # ASPNet: Adaptive Spatial-frequency Perception for Small Object Detection in UAV Imagery
 
 ## Documentation
@@ -13,7 +12,6 @@ Pip install the ASPNet package including all requirements in a Python>=3.8 envir
 pip install -r requirements.txt
 pip install torch==2.2.1 torchvision==0.17.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -e .
-```
 
 ## Usage
 
