@@ -82,20 +82,9 @@ your_dataset/
         └── ...
 ```
 
-## Citation
 
-If you use ASPNet in your research, please cite:
-
-```bibtex
-@article{aspnet2024,
-  title={ASPNet: Adaptive Spatial-frequency Perception for Small Object Detection in UAV Imagery},
-  author={},
-  journal={},
-  year={2024}
-}
-```
 
 ## Acknowledgement
 
-Part of the code is adapted from previous works: Ultralytics YOLO. We thank all the authors for their contributions.
+Part of the code is adapted from previous works: Ultralytics YOLOv11. We thank all the authors for their contributions.
 ```
