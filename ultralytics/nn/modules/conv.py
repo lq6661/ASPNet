@@ -394,7 +394,7 @@ class PDFA(nn.Module):
 
         # 逆变换回时域
         y_ifft = torch.fft.irfft(y_fft_filtered, n=C, dim=1)  # [B, C]
-        freq_att = torch.sigmoid(y_ifft).unsqueeze(-1).unsqueeze(-1)  # [B, C, 1, 1]
+        ##
         frequency_out = x * freq_att
 
         # ========== 自适应融合 ==========
